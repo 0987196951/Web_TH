@@ -11,7 +11,7 @@ import antlr.collections.List;
 @Service
 @Transactional
 public class ProductService {
-  @Autowired
+        @Autowired
 	private ProductRepository repo;
 	
 	public List<Product> listAll(){
