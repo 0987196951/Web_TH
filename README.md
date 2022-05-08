@@ -16,6 +16,7 @@
 - Gồm các chức năng Update Product là lưu dữ liệu sau khi nhập và View Product là quay lại storage.html để xem bảng Products đã được Edit. 
 -  Trong EditControler.java có chú thích @Controller để hiểu được nó là controller. 
 -  Thuộc tính ModelAndView hiện thị các danh sách các sản phẩm.
+
 Ngô Đức Thành – B19DCCN650. 
 - Modun add (thêm product)  
     - Interface ProductRepository kế thừa giao diện JpaRepository cung cấp phương thức add product  
