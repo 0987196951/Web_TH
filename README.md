@@ -10,3 +10,8 @@
 - Khởi tạo StorageController có tham số truyền vào là ProductRepository để có thêm tiêm JpaRepository vào trong Controller và phương thức phải được chú thích là @Autowire để có thể thực hiện tự động truyển vào khi controller được khởi tạo lần đầu
 - Phương thức showProduct được được gọi khi có View gọi đến StorageController bằng phương thức get. Truyển vào showProduct 1 Model để Model đóng gói và truyển lại cho storage.html.
 - storage.html sẽ hiện danh sách sản phẩm bằng foreach. bên cạnh các dòng sản phẩm sẽ có các nút edit và delete sản phẩm.
+*Đinh Quang Vinh – B19DCCN717  
+- Viết giao diện edit.html để hiện ra form edit khi người dùng nhấn vào Edit tại bảng Products.  
+- Gồm các chức năng Update Product là lưu dữ liệu sau khi nhập và View Product là quay lại storage.html để xem bảng Products đã được Edit. 
+-  Trong EditControler.java có chú thích @Controller để hiểu được nó là controller. 
+-  Thuộc tính ModelAndView hiện thị các danh sách các sản phẩm.
