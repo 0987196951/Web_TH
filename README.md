@@ -16,3 +16,18 @@
 - Gồm các chức năng Update Product là lưu dữ liệu sau khi nhập và View Product là quay lại storage.html để xem bảng Products đã được Edit. 
 -  Trong EditControler.java có chú thích @Controller để hiểu được nó là controller. 
 -  Thuộc tính ModelAndView hiện thị các danh sách các sản phẩm.
+Ngô Đức Thành – B19DCCN650. 
+- Modun add (thêm product)  
+    - Interface ProductRepository kế thừa giao diện JpaRepository cung cấp phương thức add product  
+    - ProductService (giúp controller tách biệt với xử lý database) cung cấp hàm void save(Product product) để thêm sản phẩm tương ứng 
+    - Trong controller AddController. 
+    - showNewProductPage chuyển một đối tượng product ra trang view new_product (để người dùng nhập các thuộc tính sản phẩm) 
+    - saveProduct lưu product. 
+- Modun delete (xóa sản phẩm). 
+    - Interface ProductRepository kế thừa giao diện JpaRepository cung cấp phương thức delete product. 
+    - ProductService (giúp controller tách biệt với xử lý database) cung cấp hàm void delete(id) để xóa sản phẩm (dựa trên id). 
+Trong controller DeleteController 
+
+deleteProduct(@PathVariable(name = "id") int id) xóa sản phẩm . 
+
+ 
